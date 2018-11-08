@@ -1,0 +1,451 @@
+html,
+body {
+  height: 100vh;
+}
+html,
+body,
+div,
+input,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+label {
+  color: #f5f5f5;
+  font-weight: 500;
+}
+input {
+  height: 20px;
+  border: 1px solid #999;
+  text-align: left;
+  border-radius: 2px;
+}
+input[disabled] {
+  height: 24px;
+  border-radius: 2px;
+  border: 1px solid #999;
+  text-align: center;
+  color: #e3e3e3;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.2);
+}
+form {
+  width: 98%;
+  margin: 20px auto;
+  color: #ccc;
+}
+.el-input-group__prepend {
+  min-width: 50px;
+}
+.el-dropdown-menu__item,
+.el-select-dropdown__item,
+.el-time-spinner__item {
+  border: 0px solid transparent !important;
+}
+.el-progress__text {
+  color: #fff;
+}
+.el-radio {
+  color: #fff;
+  margin-top: 10px!important;
+}
+.el-checkbox {
+  color: #fff;
+}
+.el-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.el-table th,
+.el-table tr {
+  background: transparent;
+}
+.el-table thead.is-group th {
+  background: transparent;
+}
+.el-table {
+  color: #fff;
+  background: transparent;
+  margin-top: 10px;
+}
+.el-table thead {
+  color: #fff;
+}
+.el-table thead tr {
+  background: linear-gradient(to right, #256e5a, #256e5a);
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: rgba(255, 255, 255, 0.3);
+}
+.el-table__body tr.hover-row > td {
+  background: rgba(255, 255, 255, 0.3);
+}
+.el-table__body tr.current-row > td {
+  background: rgba(255, 255, 255, 0.3);
+}
+.el-table__body tr.hover-row.current-row > td {
+  background: rgba(255, 255, 255, 0.3);
+}
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  background: #339967;
+}
+.el-tree {
+  color: #f5f5f5;
+  background: #082432;
+}
+.el-tree .el-tree-node {
+  background: #082432;
+}
+.el-tree .el-tree-node:focus > .el-tree-node__content {
+  background: #339967;
+}
+.el-tree .el-tree-node .el-tree-node__content:hover {
+  background: #339967;
+}
+.el-tree .is-current > .el-tree-node__content {
+  background: #339967;
+}
+.el-tabs--border-card {
+  border: 0px solid transparent;
+}
+.el-tabs {
+  min-height: 90vh;
+  background: radial-gradient(circle, #287170, #1A4956);
+}
+.el-tabs .el-tabs__header {
+  background: linear-gradient(to right, #02272F, #1A4956);
+  border-bottom: 1px solid transparent;
+}
+.el-tabs .el-tabs__header .el-tabs__nav-wrap::after {
+  background: #02272F;
+}
+.el-tabs .el-tabs__header .el-tabs__nav-wrap .el-tabs__nav {
+  border: none;
+}
+.el-tabs .el-tabs__header .el-tabs__nav-wrap .el-tabs__nav .el-tabs__active-bar {
+  background: #fff;
+}
+.el-tabs .el-tabs__header .el-tabs__item.is-active {
+  background: #01BF77;
+  color: #fff;
+}
+.el-tabs .el-tabs__header .el-tabs__item {
+  background: #3F3F49;
+  color: #666;
+}
+.el-dialog__wrapper {
+  background: rgba(255, 255, 255, 0.7);
+}
+.el-dialog__wrapper .el-dialog {
+  background: #4a6169;
+}
+.el-dialog__wrapper .el-dialog .el-dialog__header .el-dialog__title {
+  color: #fff;
+}
+.status-offline {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(10deg, #666 30%, #999, #ccc);
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 100px;
+}
+.status-success {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(10deg, #0c7801 30%, #95d589, #f2fbf1);
+  box-shadow: -1px 1px 2px 0px #666;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+.status-error {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(10deg, #fd0a09 30%, #fc9492, #fdd9d7);
+  box-shadow: -1px 1px 2px 0px #666;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+.setting-box-c {
+  text-align: center;
+  padding-top: 20px;
+}
+.setting-box-l {
+  text-align: left;
+  padding-top: 20px;
+}
+.setting-box-r {
+  text-align: right;
+  padding-top: 20px;
+}
+.li-span-1 {
+  width: 95%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  padding: 4px 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.li-span-1 > label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  line-height: 18px;
+  text-align: right;
+}
+.li-span-1 > label label {
+  width: 100%;
+}
+.li-span-1 input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: left;
+  padding-left: 10px;
+}
+.li-span-1 input[disabled] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: center;
+}
+.li-span-1 .el-select {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.li-span-1 .el-select input {
+  width: 100%;
+}
+.li-span-1 .el-radio-group {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.li-span-1 .el-radio-group .el-radio {
+  margin-left: 30px;
+  margin-top: 4px;
+}
+.li-span-2 {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 4px 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.li-span-2 label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  line-height: 18px;
+  text-align: right;
+}
+.li-span-2 label label {
+  width: 100%;
+}
+.li-span-2 input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: left;
+  padding-left: 10px;
+}
+.li-span-2 input[disabled] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: center;
+}
+.li-span-2 .el-select {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+.li-span-2 .el-select input {
+  width: 100%;
+}
+.li-span-4 {
+  width: 22%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 4px 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.li-span-4 label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  line-height: 18px;
+  text-align: right;
+}
+.li-span-4 label label {
+  width: 100%;
+}
+.li-span-4 input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46%;
+  margin-left: 5px;
+  text-align: left;
+  padding-left: 10px;
+}
+.li-span-4 input[disabled] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: center;
+}
+.li-span-4 .el-select {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.li-span-4 .el-select input {
+  width: 100%;
+}
+.li-span-5 {
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 4px 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.li-span-5 label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  line-height: 18px;
+  text-align: right;
+}
+.li-span-5 label label {
+  width: 100%;
+}
+.li-span-5 input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: left;
+  padding-left: 10px;
+}
+.li-span-5 input[disabled] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: center;
+}
+.li-span-5 .el-select {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.li-span-5 .el-select input {
+  width: 100%;
+}
+.li-span-6 {
+  width: 14%;
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 4px 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.li-span-6 label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  line-height: 18px;
+  text-align: right;
+}
+.li-span-6 label label {
+  width: 100%;
+}
+.li-span-6 input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: left;
+  padding-left: 10px;
+}
+.li-span-6 input[disabled] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  text-align: center;
+}
+.li-span-6 .el-select {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.li-span-6 .el-select input {
+  width: 100%;
+}
+.subtitle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  line-height: 30px;
+  text-align: right;
+}
+.entry {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 5px;
+  height: 20px;
+  text-align: center;
+}

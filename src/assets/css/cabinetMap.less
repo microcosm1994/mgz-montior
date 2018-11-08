@@ -1,0 +1,145 @@
+.cabinetMap-info{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  .info-item{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    i{
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 14px;
+      border-radius:2px;
+      border: 1px solid #333;
+    }
+    span{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      color:#fff;
+      line-height: 20px;
+    }
+    .null{
+      background: #dfe0e4;
+    }
+    .main{
+      background: RGB(197,230,185);
+    }
+    .fully{
+      background: RGB(201,225,255);
+    }
+  }
+}
+.cabinetMap{
+  width: 100%;
+  padding-bottom: 50px;
+  .group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //border:1px solid #666;
+    background: transparent;
+    border-radius: 4px;
+    .item{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5px;
+      padding-right: 5px;
+      min-width: 140px;
+      .item-device{
+        width: 100%;
+        height: 100%;
+        //background: url(../img/luosi.png) no-repeat;
+        background: #fff;
+        background-size: 110% 100%;
+        border:1px solid #333;
+        padding-right: 50px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 4px;
+        border-radius: 3px;
+        cursor: pointer;
+        box-shadow:1px 1px 5px #999 inset;
+        &::before{
+          content: '○';
+          position: absolute;
+          top: 0px;
+          left: 3px;
+          color:#666;
+          font-size: 4px;
+        }
+        &::after{
+          content: '○';
+          position: absolute;
+          bottom: 0px;
+          left: 3px;
+          color:#666;
+          font-size: 4px;
+        }
+        img{
+          width: 80%;
+          height: 30px;
+          margin: 0 auto;
+          display: none;
+        }
+        p{
+          width: 100%;
+          height: 26px;
+          padding-top: 6px;
+          box-sizing: border-box;
+          line-height:14px;
+          text-align: center;
+          font-size: 14px;
+          //white-space: nowrap;
+          //overflow: hidden;
+          //text-overflow: ellipsis;
+          word-break: break-all;
+          color:#333;
+          font-weight: 500;
+        }
+        .status{
+          display: block;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          position: absolute;
+          right: 10px;
+          top:50%;
+          transform: translateY(-50%);
+          overflow: hidden;
+        }
+        .error{
+          background: linear-gradient(10deg, #fd0a09 30%, #fc9492, #fdd9d7);
+          box-shadow:-1px 1px 2px 0px #666;
+        }
+        .success{
+          background: linear-gradient(10deg, #0c7801 30%, #95d589, #f2fbf1);
+          box-shadow:-1px 1px 2px 0px #666;
+        }
+        .outline{
+          background:url(../img/outline.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .null{
+        background: #dfe0e4;
+        //background: url(../img/null.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .main{
+        background: RGB(197,230,185);
+      }
+      .fully{
+        background: RGB(201,225,255);
+      }
+    }
+  }
+}

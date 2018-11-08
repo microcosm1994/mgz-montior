@@ -1,0 +1,62 @@
+.macroConfiguration {
+  width: 100%;
+}
+.macroConfiguration .header {
+  width: 100%;
+  min-width: 1260px;
+  height: 70px;
+  overflow: hidden;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.macroConfiguration .header .search {
+  float: left;
+  margin-left: 160px;
+}
+.macroConfiguration .header .search label {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+.macroConfiguration .header .search .search-box {
+  width: 340px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.macroConfiguration .header .search .search-box .el-select .el-input__inner {
+  width: 120px !important;
+}
+.macroConfiguration .header .search .search-box .el-select .el-input .el-input__inner {
+  width: 120px;
+}
+.macroConfiguration .header .type {
+  float: left;
+  margin-left: 50px;
+}
+.macroConfiguration .header .type label {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+.macroConfiguration .header .type .type-box {
+  width: 140px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  margin-left: 10px;
+}
+.macroConfiguration .header .btn-box {
+  float: right;
+  margin-right: 150px;
+  height: 32px;
+  overflow: hidden;
+}
+.macroConfiguration .header .btn-box .el-button {
+  margin: 0;
+  margin-left: 30px;
+}
+.macroConfiguration .list {
+  width: 100%;
+  min-width: 1260px;
+}
